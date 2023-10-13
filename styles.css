@@ -1,0 +1,156 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and text color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.logo {
+    position: absolute; top:0pt; left:0pt;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Style the hero section */
+#hero {
+    background-color: #00142f;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #ffffff;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff3a3a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the features section */
+#features {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+#features h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.feature {
+    text-align: center;
+    margin: 40px;
+}
+
+.feature img {
+    max-width: 100%;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Style the genres section */
+#genres {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+}
+
+#genres h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.genre-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.genre {
+    text-align: center;
+}
+
+.genre img {
+    max-width: 100%;
+}
+
+genre h3 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Style the download section */
+#download {
+    background-color: #00142f;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff
+}
+
+.footers{
+    background-color: #333;
+    text-align: center;
+    color:#fff;
+}
