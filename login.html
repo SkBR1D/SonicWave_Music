@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login to SonicWave Music</title>
-    <link rel="stylesheet" href="loginstyles.css">
+    <title>SonicWave Music - Sign Up</title>
+    <link rel="stylesheet" href="signupstyle.css">
 </head>
+
 <body>
-    <div class="login-container">
-        <form class="login-form" action="login.php" method="post">
-            <h1>Login to SonicWave Music</h1>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Log In</button>
-        </form>
+    <div class="container">
+        <header>
+            <h1>SonicWave Music</h1>
+        </header>
+        <main>
+            <h2>Log in</h2>
+            
+        
+                <main class="signup-page">  
+                <button id="link-wallet-button">Link MetaMask Wallet</button>
+                <script>
+                  document.getElementById('link-wallet-button').addEventListener('click', event => {
+                    let account;
+                    let button = event.target;
+                    ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+                      account = accounts[0];
+                      console.log(account);
+                      button.textContent = account;
+            
+                      ethereum.request({method: 'eth_getBalance' , params: [account, 'latest']}).then(result => {
+                        console.log(result);
+                        let wei = parseInt(result,16);
+                        let balance = wei / (10**18);
+                        console.log(balance + " ETH");
+                        window.location.href = "postloginmain.html";
+                      });
+                    });
+                  });
+                </script>  
+              
+              
+            
+            
+        </main>
     </div>
 </body>
 </html>
