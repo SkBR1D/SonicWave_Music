@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Music - SonicWave Music Marketplace</title>
+    <link rel="stylesheet" href="marketplacestyles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse Music</a></li>
+                <li><a href="account.html">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Browse Music</h1>
+        <p>Search for your favorite songs and artists. Click "Buy" to purchase a song.</p>
+
+        <!-- Song search form -->
+        <form id="song-search-form">
+            <label for="search-input">Search for Music:</label>
+            <input type="text" id="search-input" placeholder="Enter song or artist name">
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- List of songs (simplified) -->
+        <div class="song-list">
+            <div class="song">
+                <h2>Song Title 1</h2>
+                <p>Artist: Artist Name 1</p>
+                <p>Price: 0.005 ETH</p>
+                <button class="buy-button" data-song-id="1">Buy</button>
+            </div>
+
+            <div class="song">
+                <h2>Song Title 2</h2>
+                <p>Artist: Artist Name 2</p>
+                <p>Price: 0.01 ETH</p>
+                <button class="buy-button" data-song-id="2">Buy</button>
+            </div>
+
+            <!-- Add more song listings here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SonicWave Music</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
