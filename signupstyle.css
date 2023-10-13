@@ -53,6 +53,39 @@ form input {
     border-radius: 5px;
 }
 
+#link-wallet-button {
+    background-color: #ff3a3a;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+#link-wallet-button:hover {
+    background-color: #555;
+}
+
+#sign-up-button {
+    background-color: #ff3a3a;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+#sign-up-button:hover {
+    background-color: #555;
+}
+
+
 form button {
     width: 100%;
     background-color: #ff3a3a;

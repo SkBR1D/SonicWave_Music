@@ -1,18 +1,18 @@
-/* Reset some default styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set a background color and text color */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     color: #333;
 }
 
-/* Style the header */
+
 header {
     background-color: #333;
     color: #fff;
@@ -55,7 +55,7 @@ nav a {
     color: #ffffff;
 }
 
-/* Style the hero section */
+
 #hero {
     background-color: #00142f;
     background-size: cover;
@@ -84,7 +84,7 @@ nav a {
     font-weight: bold;
 }
 
-/* Style the features section */
+
 #features {
     background-color: #ffffff;
     padding: 80px 0;
@@ -109,7 +109,7 @@ nav a {
     margin: 20px 0;
 }
 
-/* Style the genres section */
+
 #genres {
     background-color: #f7f7f7;
     padding: 80px 0;
@@ -139,7 +139,7 @@ genre h3 {
     margin: 20px 0;
 }
 
-/* Style the download section */
+
 #download {
     background-color: #00142f;
     background-size: cover;
