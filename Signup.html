@@ -22,6 +22,36 @@
                 <main class="signup-page">
                     
                 <button id="link-wallet-button">Link MetaMask Wallet</button>
+                <script>
+                  document.getElementById('link-wallet-button').addEventListener('click', event => {
+                    let account;
+                    let button = event.target;
+                    ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+                      account = accounts[0];
+                      console.log(account);
+                      button.textContent = account;
+            
+                      ethereum.request({method: 'eth_getBalance' , params: [account, 'latest']}).then(result => {
+                        console.log(result);
+                        let wei = parseInt(result,16);
+                        let balance = wei / (10**18);
+                        console.log(balance + " ETH");
+                      });
+                    });
+                  });
+                </script>  
+
+
+
+
+
+
+
+
+
+
+
+
                 <button id="sign-up-button">Sign Up</button>
             </form>
             <p class="login-link">Already have an account? <a href="login.html">Log in</a></p>
