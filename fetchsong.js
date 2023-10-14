@@ -7,7 +7,7 @@ const audioContainer = document.getElementById("audio-container");
 
 // Create an audio element
 const audio = document.createElement("audio");
-audio.controls = true;
+audio.controls = true; 
 
 // Create a source element and set its attributes
 const source = document.createElement("source");
